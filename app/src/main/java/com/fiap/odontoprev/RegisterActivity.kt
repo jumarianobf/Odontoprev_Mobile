@@ -18,7 +18,6 @@ class RegisterActivity : AppCompatActivity() {
             val emailInput = findViewById<EditText>(R.id.email_input).text.toString()
             val passwordInput = findViewById<EditText>(R.id.password_input).text.toString()
 
-            // Verifica se os campos de email e senha estão preenchidos
             if (emailInput.isNotEmpty() && passwordInput.isNotEmpty()) {
                 registerUser(emailInput, passwordInput)
             } else {
